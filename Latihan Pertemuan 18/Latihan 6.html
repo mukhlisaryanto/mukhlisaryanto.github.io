@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Latihan 6</title>
+	</head>
+	<body>
+		<script lang="javascript" type="text/javascript">
+			function konversi(F) {
+				var C;
+				C = (5 / 9) * (F - 32);
+				return C;
+			}
+			var F = new Array(212, 32, -459.15);
+			var C = new Array();
+			var Counter;
+			for (Counter = 0; Counter <= 2; Counter++) {
+				C[Counter] = konversi(F[Counter]);
+			}
+			for (Counter = 2; Counter >= 0; Counter--) {
+				document.write('value ' + 'Counter ' + 'was ' + F[Counter] + ' derajat Fahrenhet ');
+				document.write('which is ' + C[Counter] + ' derajat celsius<br> ');
+			}
+		</script>
+	</body>
+</html>

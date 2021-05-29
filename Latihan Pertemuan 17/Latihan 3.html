@@ -1,0 +1,39 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script language="JavaScript" type="text/javascript">
+        var myName = prompt("Please enter your name", "Mukhlis");
+        var nb = prompt("Please nama barang", "");
+        var hs = prompt("Please harga satuan", "");
+        var jb = prompt("Please jumlah barang", "");
+        hb = hs * jb;
+        if (hb > 500000) {
+            disc = (5 / 100 * hb);
+        } else if (hb > 300000) {
+            disc = (2 / 100 * hb);
+        } else {
+            disc = (0.5 / 100 * lib);
+        }
+        hbb = hb - disc;
+        document.write(
+            "<font size=5 color='blue'><img src='index.png' width-75' height='60'>Penjualan Harga Barang</font>",
+            "<br>");
+        document.write("<font size=4 color='sienna'xpre>");
+        document.write("===================================", "<br>");
+        document.write("Nama barang = ", nb, "<br>");
+        document.write("Harga satuan = ", hs, "<br>");
+        document.write("Jumlah Barang = ", jb, "<br>");
+        document.write("Harga Barang = ", hb, "<br>");
+        document.write("Harga Discount = ", disc, "<br>");
+        document.write("Harga Barang Bersih = ", hbb, "<br>");
+        document.write("===================================", "<br>");
+        document.write("</font></pre>")
+        document.write("<font size=3 color='red'><blink>");
+        document.write("Created by " + myName);
+        document.write("</font></blink>");
+    </script>
+</body>|
+</htmt>
